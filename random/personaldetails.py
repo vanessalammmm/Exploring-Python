@@ -1,4 +1,4 @@
-# Practising regex w a format checker for personal particulars
+# Exploring regex w a format checker for personal particulars
 
 import re
 
