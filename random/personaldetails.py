@@ -50,3 +50,5 @@ print('\nPlease check that all particulars are correct:\n'
 	+'\nContact Number: '.ljust(20)+validnumber.group().rjust(22)
 	+'\nIC number: '.ljust(20)+validic.group().rjust(22)
 	+'\nEmail address: '.ljust(20)+validemail.group().rjust(22))
+
+
