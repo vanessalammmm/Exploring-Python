@@ -1,5 +1,5 @@
 
-# Practising BeautifulSoup library w a web scraper to retrieve selected listings from MyFaves (previously Groupon)
+# Exploring BeautifulSoup library w a web scraper to retrieve selected listings from MyFaves (previously Groupon)
 
 import json, urllib, requests,re
 from bs4 import BeautifulSoup
