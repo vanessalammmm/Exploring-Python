@@ -35,6 +35,3 @@ for item in info:
     count+=1
 print('Offers retrieved: ',count)
 
-# TO DO:
-# organize offers retrieved into a dataframe and export as csv file to save results
-
