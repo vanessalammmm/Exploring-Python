@@ -1,3 +1,4 @@
+
 # Save details of beauty and F&B related listings from MyFave for further cleaning/ analysis
 
 import json, urllib, requests,re
@@ -57,3 +58,4 @@ listings.to_csv('listings_beauty.csv')
 
 # TO DO:
 # Change scraping format, clean data from CSV, use item['url'] to access indiv listing page for more details
+
