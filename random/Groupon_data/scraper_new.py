@@ -57,5 +57,5 @@ listings.to_csv('listings_beauty.csv')
 # but F&B seems to have fewer listings only 30+ pages so there's probably more data to analyze for beauty-related listings)
 
 # TO DO:
-# Change scraping format, clean data from CSV, use item['url'] to access indiv listing page for more details
+# item['url'] to access indiv listing page for more details, nlp on description/ comments
 
