@@ -8,35 +8,29 @@ from wordcloud import WordCloud
 amos = pd.read_csv('amos.csv')
 amos.info()
 
+
 # find errors and remove columns
 
 errors = []
-
 for i in range(len(amos)):
     if type(amos.textOriginal[i])!=str:
         errors.append(i)
 
 amos = amos.drop(errors)
-
 comments = " ".join(amos.textOriginal)
-
-
-# convert all to lowercase
-
 comments = comments.lower()
 
 
 # tokenize words
 
 from nltk.tokenize import RegexpTokenizer
-
 tokenizer = RegexpTokenizer(r'\w+')
 tokensraw = tokenizer.tokenize(comments)
+
 
 # remove stopwords
 
 from nltk.corpus import stopwords
-
 stopwords = set(stopwords.words('english'))
 tokens = [word for word in tokensraw if word not in stopwords]
 
@@ -73,4 +67,5 @@ l_tokens = " ".join(tokens_lem)
 tokens_wordcloud = WordCloud().generate(l_tokens)
 plt.figure(figsize=(20,10))
 plt.imshow(tokens_wordcloud)
+
 
