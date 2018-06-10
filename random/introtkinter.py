@@ -1,8 +1,6 @@
 
 # import libraries
 from tkinter import *
-import tkinter.messagebox
-
 
 # Make window and set size/ title
 root2 = Tk()
